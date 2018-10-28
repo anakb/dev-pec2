@@ -1,8 +1,8 @@
 # dev-pec2 - Módulo 3 Diseño y desarrollo
 
-## EJERCICIO 2
+## EJERCICIO 3
 
-**IPFS** 
+**SWARM** 
 ---
 
 **1. Hacer pequeña modificación en proyecto pet-shop**
