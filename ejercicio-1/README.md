@@ -25,13 +25,13 @@ Una vez hechos los cambios en las líneas del archivo ensutils-testnet.js. EMpec
 
 Una vez abierta la consola de Ethereum cargué el archivo ensutils-testnet.js:
 
-![Lazamiento archivo ens](https://github.com/anakb/dev-pec1/blob/master/Ejercicio%201/1.png "Lazamiento archivo ens")
+![Lazamiento archivo ens](https://github.com/anakb/dev-pec2/blob/master/ejercicio-1/ensutils%20carga%20consola.png "Lazamiento archivo ens")
 
 Tras el lanzamiendo desbloquee mi cuenta indicando una password. 
 
 Una vez desbloqueada la cuenta, el saldo en mi address se mantuvo a cero a pesar de recibir ethers en las correspondientes cuentas de Ropsten y Rinkeby:
 
-![Adress a cero a pesar de recibir eth](https://github.com/anakb/dev-pec1/blob/master/Ejercicio%201/1.png "Lazamiento archivo ens")
+![Adress a cero a pesar de recibir eth](https://github.com/anakb/dev-pec2/blob/master/ejercicio-1/No%20gas.png "Lazamiento archivo ens")
 
 Para comprobar el saldo de mi address 0x2623b1a0A95325d996F1F3B1da945731ad2d72CD (en Ropsten): 
 
@@ -58,13 +58,13 @@ Una vez lanzada la conexión con la red, en la consola de Ethereum indiqué lo s
 
 `geth --datadir /tmp/ --ipcpath /tmp/geth.ipc attach`
 
-![Consola con RPC](https://github.com/anakb/dev-pec1/blob/master/Ejercicio%201/1.png "Consola con RPC")
+![Consola con RPC](https://github.com/anakb/dev-pec2/blob/master/ejercicio-1/consola%20con%20rpc.png "Consola con RPC")
 
 En esa pantalla, para mi address tenía eth suficientes para continar con el ejercicio de ENS.
 
 Para continuar solicité la comprobación de si mi nombre estaba registrado pero me salió el error "invalid address", pero no he tenido forma de encontrar la address que corresponda a la testnet de rpc:
 
-![Error "invalid address"](https://github.com/anakb/dev-pec1/blob/master/Ejercicio%201/1.png "Error "invalid address")
+![Error "invalid address"](https://github.com/anakb/dev-pec2/blob/master/ejercicio-1/Fallo%20en%20address%20RPC.png "Error "invalid address")
 
 Lo que sí me permitió la consola es establecer un Resolver e indicarme el public Resolver como se puede ver en la imagen anterior. 
 
