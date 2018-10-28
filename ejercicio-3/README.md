@@ -5,53 +5,34 @@
 **SWARM** 
 ---
 
-**1. Hacer pequeña modificación en proyecto pet-shop**
+**1. Instalar swarm**
 
-He cambiado `Pete` por `Ana` en el fichero `index.html`.
+Seguir las instrucciones en [https://swarm-guide.readthedocs.io/en/latest/installation.html](https://swarm-guide.readthedocs.io/en/latest/installation.html)
 
-![pantalla-ej2-01.png](https://github.com/anakb/dev-pec2/blob/master/ejercicio-2/Cambios%20en%20pet%20shop.png "pantalla-ej2-01")
+```
+sudo apt-get install software-properties-common
+sudo add-apt-repository -y ppa:ethereum/ethereum
+sudo apt-get update
+sudo apt-get install ethereum-swarm
+```
+
+![pantalla-ej3-01.png](https://github.com/anakb/dev-pec2/blob/master/ejercicio-3/1.png "pantalla-ej3-01")
 ---
 
-**2. Subir proyecto pet-shop modificado a github (sin incluir node_modules)**
+**2. Arrancar un nodo swarm**
 
-Para que la carpeta `node_modules` no se incluya, en la raiz del proyecto pet-shop incluyo el fichero `.gitignore` con la linea `node_modules`.
+Seguir las instrucciones en [https://swarm-guide.readthedocs.io/en/latest/gettingstarted.html](https://swarm-guide.readthedocs.io/en/latest/gettingstarted.html)
 
-```
-git add index.html
-git commit "Little changes in index.html (show my name)"
-git push -u origin master
-```
+Creo una cuenta con `geth account new`. Usare el resultado de este comando en el siguiente.
 
-![pantalla-ej2-02.png](https://github.com/anakb/dev-pec2/blob/master/ejercicio-2/gitignore.png "pantalla-ej2-02")
+Conecto con swarm con `swarm --bzzaccount <your-account-here>`
+
+![pantalla-ej3-02.png](https://github.com/anakb/dev-pec2/blob/master/ejercicio-3/2.png "pantalla-ej3-02")
 ---
 
-**3. Instalacion IPFS**
+**3. Verificar que el nodo esta corriendo**
 
-Descargar el binario de [https://dist.ipfs.io/#go-ipfs](https://dist.ipfs.io/#go-ipfs)
+Apunto mi navegador web hacia [http://localhost:8500/](http://localhost:8500/) veo que efectivamente aparece la pagina que un nodo de swarm sirve por defecto.
 
-Seguir las instrucciones de instalacion de [https://docs.ipfs.io/introduction/install](https://docs.ipfs.io/introduction/install)
-
-```
-cd ~/Descargas
-tar xvfz go-ipfs_v0.4.17_linux-amd64.tar.gz
-cd go-ipfs
-sudo ./install.sh
-```
-
+![pantalla-ej3-03.png](https://github.com/anakb/dev-pec2/blob/master/ejercicio-3/3.png "pantalla-ej3-03")
 ---
-
-**4. Inicialización de daemon y subida de archivos a IPFS**
-
-Para empezar a usar IPFS se inicializa el daemon:
-
-`ipfs daemon`
-
-![pantalla-ej2-04.png](https://github.com/anakb/dev-pec2/blob/master/ejercicio-2/DAEMON.png "pantalla-ej2-04")
-
-Después, en otra terminal, se sube el directorio de la dApp a IPFS:
-
-`ipfs add -r pet-shop`
-
-![pantalla-ej2-05.png](https://github.com/anakb/dev-pec2/blob/master/ejercicio-2/Subida%20IPFS.png "pantalla-ej2-05")
-
-El hash en IPFS de ese directorio es: QmNgwtUffRGB9JeEkhgooEQxsXDHCdNyJPULEKybC99yGK. Comprobé que con ese hash se puede obtener el directorio en IPFS. 
