@@ -64,7 +64,7 @@ En esa pantalla, para mi address tenía eth suficientes para continar con el eje
 
 Para continuar solicité la comprobación de si mi nombre estaba registrado pero me salió el error "invalid address", pero no he tenido forma de encontrar la address que corresponda a la testnet de rpc:
 
-![Error "invalid address"](https://github.com/anakb/dev-pec2/blob/master/ejercicio-1/Fallo%20en%20address%20RPC.png "Error "invalid address")
+![Error "invalid address"](https://github.com/anakb/dev-pec2/blob/master/ejercicio-1/Fallo%20en%20address%20RPC.png "Error invalid address")
 
 Lo que sí me permitió la consola es establecer un Resolver e indicarme el public Resolver como se puede ver en la imagen anterior. 
 
